@@ -1,0 +1,20 @@
+obj/lighting
+    appearance_flags = PLANE_MASTER | NO_CLIENT_COLOR
+    mouse_opacity = 0
+    plane = 1
+    screen_loc = "CENTER"
+    blend_mode = BLEND_MULTIPLY
+    var/obj/bg   // background (this is what you animate to change ambient color)
+
+    New()
+        bg = new
+        bg.plane = FLOAT_PLANE
+        bg.layer = BACKGROUND_LAYER
+        bg.icon = 'black.dmi'
+        bg.transform = matrix(100, 100, MATRIX_SCALE)
+        vis_contents += bg
+
+obj/spotlight    // not really used for objs, just for overlays
+    icon = 'spotlight.dmi'
+    plane = 1
+    blend_mode = BLEND_ADD

@@ -1,0 +1,15 @@
+# int files
+*.int
+
+# rsc files
+*.rsc
+
+# lk files
+*.lk
+
+# dmb files
+*.dmb
+
+# Data folder
+Data/
+Dragon Saga.zip

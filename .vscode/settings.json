@@ -1,0 +1,17 @@
+{
+    "zenMode.fullScreen": false,
+    "dreammaker.objectTreePane": true,
+    "explorer.sortOrder": "type",
+    "dreammaker.tickOnCreate": true,
+    "auto-comment-blocks.disabledLanguages": [],
+    "tgstationTestExplorer.project.defines": [
+        "#define CIBUILDING"
+    ],
+    "emmet.preferences": {},
+    "errorLens.enabledDiagnosticLevels": [
+        "error",
+        "warning",
+        "info",
+        "hint"
+    ]
+}
