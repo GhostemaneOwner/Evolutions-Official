@@ -7,7 +7,7 @@ mob
 mob/proc/Historys()
 	if(Historys&&Historys!="Choosing") return
 	else Historys="Choosing"
-///mob/proc/Historys()
+///mob/proc/Historys() 
 	var/list/Historie=new/list
 	Historie.Add("Average")
 	Historie.Add("Amnesia")
