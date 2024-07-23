@@ -189,7 +189,7 @@ var/global/
 	WipeDayProgress=0
 	Ki_Power=0.8 //This is a multiplier of the overall damage of all ki attacks to balance them out.
 
-
+  
 	const/Gain_Divider = 0.0000001
 	const/Stat_Gain_Divider=0.05
 	const/MAX_MESSAGE_LEN = 6144	//6kb per text wall
