@@ -2270,7 +2270,7 @@ mob/proc/Personality()
 				if("No")
 					Personality()
 				if("Yes")
-					MedMod*=1.75
+					StrMod*=1.75
 		if("Studious")
 			Personality="Studious"
 			Choice=alert(src,"You hit the books and never learned how to stop. You're a great catch at parties (not), but at least your name is known at your local library! Is this the type of Personality you want?","","Yes","No")
@@ -2339,7 +2339,7 @@ mob/proc/Personality()
 				if("No")
 					Personality()
 				if("Yes")
-					MedMod*=1.35
+					OffMod*=1.35
 		if("Robotic Blank")
 			Personality="Robotic Blank"
 			Choice=alert(src,"Your character is clean-slate, starting with no memories and maybe no personality whatsoever of it's own. It falls upon either a programmer or the android itself to experience enough to fill this gaping void...  Is this the type of Personality you want?","","Yes","No")
