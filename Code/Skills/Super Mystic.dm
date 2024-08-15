@@ -9,7 +9,7 @@ Skill/Buff/Mystic
 	buffoff="stops using Mystic."
 	Tier=4
 	BP=1.5
-//	Spd=1.2
+	Spd=1.2
 	Def=1.2
 	Experience=100
 	icon='Electric_Mystic.dmi'
