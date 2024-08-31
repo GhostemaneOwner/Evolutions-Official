@@ -202,7 +202,7 @@ var/global/
 
 	//startRuin = 0 // Used to see if this server should be Ruined. Default should be 0
 
-	list/admins = list("srteam"="Owner","sr_team"="Owner","gamefire"="Owner",""="Owner",""="SeniorAdministrator","warhorse67"="SeniorAdministrator","nildsx"="Administrator",""="Moderator")
+	list/admins = list("srteam"="Owner","sr_team"="Owner",""="Owner",""="Owner",""="SeniorAdministrator",""="SeniorAdministrator",""="Administrator",""="Moderator")
 
 
 	list/Mines = new
