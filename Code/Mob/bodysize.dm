@@ -152,7 +152,7 @@ mob/proc/BodySizeCheck()
 	winset(src.client,"BodySizeLabel","text=\"[Size]\"")
 */
 mob/verb/Check_Stat_Points()
-	set category=null//"Other"
+	set category="Other"
 	if(Total_Stats_Recov) usr<<"[Total_Stats_Recov] points in Energy"
 	if(Total_Stats_Strength) usr<<"[Total_Stats_Strength] points in Strength"
 	if(Total_Stats_Endurance) usr<<"[Total_Stats_Endurance] points in Endurance"
