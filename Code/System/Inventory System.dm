@@ -52,7 +52,7 @@ mob/proc/InventoryCheck()
 		if(istype(A,/obj/items/Power_Armor)) continue
 		if(istype(A,/obj/items/gifts)) continue
 		var/Extra=HasBelt
-		if(Race=="Tuffle") Extra+=5
+		if(Race=="Tuffle"|Race=="Demon") Extra+=5
 		if(InvUsed<InventorySpace+(HasBeastOfBurden*10)+Extra) InvUsed++
 		else if(!A.suffix||A.Can_Drop_With_Suffix)  if(isturf(src.loc))
 			for(var/mob/player/P in view(usr)) if(P.see_invisible>=src.invisibility)
