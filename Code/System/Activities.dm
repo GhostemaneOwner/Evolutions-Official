@@ -1,6 +1,5 @@
-
-//	for(var/A in typesof(/Activity))
-//		new A(usr)
+//New Activities Coding by Tenkichi
+		
 
 mob/var/GotQuest=75
 mob/var/RerollQuest=76
