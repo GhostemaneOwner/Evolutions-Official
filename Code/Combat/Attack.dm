@@ -7,7 +7,7 @@ mob/var/tmp/HomingAttack=0
 /*
 mob/proc/EZCheck()
 	if(EZ>175)
-		EZFlags++
+		EZFlags+++
 		EZ=0
 
 	//animate(src, transform = turn(matrix(), 90), time = 2)
