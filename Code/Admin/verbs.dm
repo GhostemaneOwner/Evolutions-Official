@@ -1,6 +1,6 @@
 //Toot toot admin definitions
-#define Owner 5
-#define ProjectManager 4
+#define Owner 6
+#define ProjectManager 5
 #define HeadAdministrator 4
 #define SeniorAdministrator 3
 #define Administrator 2
@@ -14,10 +14,10 @@
 	src.holder.rank = rank
 	switch (rank)
 		if ("Owner")
-			src.holder.level = 5
+			src.holder.level = 6
 			//verbs
 		if("ProjectManager")
-			src.holder.level = 4
+			src.holder.level = 5
 			//verbs 
 		if("HeadAdministrator")
 			src.holder.level = 4
@@ -86,11 +86,16 @@
 			src.verbs += /client/proc/Delete_Player_save
 
 		if(src.holder.level >= 5)
-			src.verbs += typesof(/mob/Debug/verb)
+		//	src.verbs += typesof(/mob/Debug/verb)
 //			src.verbs += /client/proc/Unactivate_Server
 			src.verbs += /obj/admins/proc/spawn_atom
 			src.verbs += /client/proc/Update_So_Far
 
+if(src.holder.level >= 6)
+			src.verbs += typesof(/mob/Debug/verb)
+//			src.verbs += /client/proc/Unactivate_Server
+			src.verbs += /obj/admins/proc/spawn_atom
+			src.verbs += /client/proc/Update_So_Far
 
 /client/proc/clear_admin_verbs()
 	src.verbs -= /obj/admins/proc/Shutdown
@@ -129,6 +134,7 @@
 	src.verbs -= typesof(/mob/Admin2/verb)
 	src.verbs -= typesof(/mob/Admin3/verb)
 	src.verbs -= typesof(/mob/Admin4/verb)
+ src.verbs -= types of(/mob/Admin5/verb)
 
 	if(src.holder) src.holder.level = 0
 	
